@@ -5,16 +5,34 @@ VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsubaki", "Tsubaki\Tsubaki.csproj", "{7793878F-A443-465D-AD36-0815D14FD04E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{7F9A099F-9502-485B-88E6-C5C00DEACF81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsubaki.Tests", "Tsubaki.Tests\Tsubaki.Tests.csproj", "{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7793878F-A443-465D-AD36-0815D14FD04E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7793878F-A443-465D-AD36-0815D14FD04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7793878F-A443-465D-AD36-0815D14FD04E}.Debug|x86.ActiveCfg = Debug|x86
+		{7793878F-A443-465D-AD36-0815D14FD04E}.Debug|x86.Build.0 = Debug|x86
 		{7793878F-A443-465D-AD36-0815D14FD04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7793878F-A443-465D-AD36-0815D14FD04E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7793878F-A443-465D-AD36-0815D14FD04E}.Release|x86.ActiveCfg = Release|x86
+		{7793878F-A443-465D-AD36-0815D14FD04E}.Release|x86.Build.0 = Release|x86
+		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Debug|x86.Build.0 = Debug|Any CPU
+		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Release|x86.ActiveCfg = Release|Any CPU
+		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
