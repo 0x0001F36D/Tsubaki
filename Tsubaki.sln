@@ -6,6 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsubaki", "Tsubaki\Tsubaki.csproj", "{7793878F-A443-465D-AD36-0815D14FD04E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{7F9A099F-9502-485B-88E6-C5C00DEACF81}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsubaki.Tests", "Tsubaki.Tests\Tsubaki.Tests.csproj", "{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}"
 EndProject
