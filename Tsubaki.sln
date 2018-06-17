@@ -13,6 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{7F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsubaki.Tests", "Tsubaki.Tests\Tsubaki.Tests.csproj", "{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E0CFDA02-248B-485E-9AE0-D7DC4967254F}"
+	ProjectSection(SolutionItems) = preProject
+		TsubakiMessageInterface.cs = TsubakiMessageInterface.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tsubaki", "Tsubaki", "{12C4902C-F1C3-4295-9608-9C451BA60ED3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apis", "Apis", "{DC778677-175E-4918-9FCE-D1191DF43FE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +49,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E0CFDA02-248B-485E-9AE0-D7DC4967254F} = {7F9A099F-9502-485B-88E6-C5C00DEACF81}
+		{12C4902C-F1C3-4295-9608-9C451BA60ED3} = {E0CFDA02-248B-485E-9AE0-D7DC4967254F}
+		{DC778677-175E-4918-9FCE-D1191DF43FE8} = {12C4902C-F1C3-4295-9608-9C451BA60ED3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A4F7D07B-845F-44A1-8272-A7AF7B1E21F9}

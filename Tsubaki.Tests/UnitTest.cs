@@ -2,6 +2,41 @@
 // Contact: mailto:viyrex.aka.yuyu@gmail.com
 // Github: https://github.com/0x0001F36D
 
+namespace Tsubaki.Apis.Tests
+{
+    using System;
+    using NUnit.Framework;
+
+    using Tsubaki.Layer.Core;
+   
+    using System.Diagnostics;
+
+    public class ApiUnitTest
+    {
+        private static string[] messages = { "Test" };
+
+
+        [Test]
+        [TestCaseSource(nameof(messages))]
+        public void 測試MessageInterface(string message)
+        {
+            var @interface = new TsubakiMessageInterface();
+
+            @interface.OnReceived += (sender, e) => Assert.AreEqual(e.RawMessage, message);
+
+            @interface.Say(message);
+
+        }
+
+
+    }
+
+
+
+}
+
+
+
 namespace Tsubaki.Layer.Core.Tests
 {
     using System;
@@ -10,6 +45,7 @@ namespace Tsubaki.Layer.Core.Tests
     using Tsubaki.Layer.Core;
     using Models;
     using System.Diagnostics;
+    
 
     public class UnitTest
     {
