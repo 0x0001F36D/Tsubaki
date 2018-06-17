@@ -3,24 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsubaki", "Tsubaki\Tsubaki.csproj", "{7793878F-A443-465D-AD36-0815D14FD04E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{7F9A099F-9502-485B-88E6-C5C00DEACF81}"
 	ProjectSection(SolutionItems) = preProject
 		appveyor.yml = appveyor.yml
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsubaki.Tests", "Tsubaki.Tests\Tsubaki.Tests.csproj", "{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsubaki.Core", "src\Tsubaki.Core\Tsubaki.Core.csproj", "{F7479D38-75E9-4156-8E50-8B5470288A6C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E0CFDA02-248B-485E-9AE0-D7DC4967254F}"
-	ProjectSection(SolutionItems) = preProject
-		TsubakiMessageInterface.cs = TsubakiMessageInterface.cs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tsubaki", "Tsubaki", "{12C4902C-F1C3-4295-9608-9C451BA60ED3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apis", "Apis", "{DC778677-175E-4918-9FCE-D1191DF43FE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsubaki.UnitTest", "tests\Tsubaki.UnitTest\Tsubaki.UnitTest.csproj", "{14FBFB31-0012-473C-917A-85DD39DA53F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,32 +19,37 @@ Global
 		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
+		Tsugumi|Any CPU = Tsugumi|Any CPU
+		Tsugumi|x86 = Tsugumi|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7793878F-A443-465D-AD36-0815D14FD04E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7793878F-A443-465D-AD36-0815D14FD04E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7793878F-A443-465D-AD36-0815D14FD04E}.Debug|x86.ActiveCfg = Debug|x86
-		{7793878F-A443-465D-AD36-0815D14FD04E}.Debug|x86.Build.0 = Debug|x86
-		{7793878F-A443-465D-AD36-0815D14FD04E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7793878F-A443-465D-AD36-0815D14FD04E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7793878F-A443-465D-AD36-0815D14FD04E}.Release|x86.ActiveCfg = Release|x86
-		{7793878F-A443-465D-AD36-0815D14FD04E}.Release|x86.Build.0 = Release|x86
-		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Debug|x86.Build.0 = Debug|Any CPU
-		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Release|x86.ActiveCfg = Release|Any CPU
-		{8FBF4055-1752-4C6A-BA9F-3CAA9D32EE3E}.Release|x86.Build.0 = Release|Any CPU
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Debug|x86.ActiveCfg = Debug|x86
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Debug|x86.Build.0 = Debug|x86
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Release|x86.ActiveCfg = Release|x86
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Release|x86.Build.0 = Release|x86
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Tsugumi|Any CPU.ActiveCfg = Tsugumi|Any CPU
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Tsugumi|Any CPU.Build.0 = Tsugumi|Any CPU
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Tsugumi|x86.ActiveCfg = Tsugumi|x86
+		{F7479D38-75E9-4156-8E50-8B5470288A6C}.Tsugumi|x86.Build.0 = Tsugumi|x86
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Debug|x86.ActiveCfg = Debug|x86
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Debug|x86.Build.0 = Debug|x86
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Release|x86.ActiveCfg = Release|x86
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Release|x86.Build.0 = Release|x86
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Tsugumi|Any CPU.ActiveCfg = Tsugumi|Any CPU
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Tsugumi|Any CPU.Build.0 = Tsugumi|Any CPU
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Tsugumi|x86.ActiveCfg = Tsugumi|x86
+		{14FBFB31-0012-473C-917A-85DD39DA53F5}.Tsugumi|x86.Build.0 = Tsugumi|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{E0CFDA02-248B-485E-9AE0-D7DC4967254F} = {7F9A099F-9502-485B-88E6-C5C00DEACF81}
-		{12C4902C-F1C3-4295-9608-9C451BA60ED3} = {E0CFDA02-248B-485E-9AE0-D7DC4967254F}
-		{DC778677-175E-4918-9FCE-D1191DF43FE8} = {12C4902C-F1C3-4295-9608-9C451BA60ED3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A4F7D07B-845F-44A1-8272-A7AF7B1E21F9}
